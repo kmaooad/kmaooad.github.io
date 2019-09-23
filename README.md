@@ -3,7 +3,7 @@
 
 ## Discussions and questions
 
-There is a chat in Gitter, click [![Join the chat at https://gitter.im/kmaooad18/course-home](https://badges.gitter.im/kmaooad18/course-home.svg)](https://gitter.im/kmaooad18/course-home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to join. There are several channels there. This repo channel (course-home) is for discussing lectures, theoretical issues, general ideas on topic (OOAD), and for _important_ organizational announcements. **Please, ask common questions in this public channel, not in personal chat, so that everyone could benefit from the discussion. For assignment-specific discussions, use their own channels (gitter button is in every assignment repo). Don't ask assignment questions in general channel.**
+There is a chat in Gitter, click [![Gitter](https://badges.gitter.im/kmaooad/course-home.svg)](https://gitter.im/kmaooad/course-home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) to join. There are several channels there. This repo channel (course-home) is for discussing lectures, theoretical issues, general ideas on topic (OOAD), and for _important_ organizational announcements. **Please, ask common questions in this public channel, not in personal chat, so that everyone could benefit from the discussion. For assignment-specific discussions, use their own channels (gitter button is in every assignment repo). Don't ask assignment questions in general channel.**
 
 ## Issues and contribution
 
