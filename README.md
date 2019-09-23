@@ -22,7 +22,7 @@ Assignments are assessed by successful run of _all_ tests from Spec.fs (you can 
 1. Create your personal GitHub account (if you don't have one)
 2. Login to GitHub and follow one of the assigment links above
 3. On your first opening some assignment, GitHub will request access from Classroom to your account — that's ok, just grant access.
-4. As you accept the assignment, GitHub will create your **personal private repository** and put starter code for assignment there. Your repository will be named like 'coding2019W4-*your_nickname*' etc. **Make sure your repository name matches the mentioned pattern, it is absolutely required to match you to your repo and grade properly!**
+4. As you accept the assignment, GitHub will create your **personal private repository** and put starter code for assignment there. Your repository will be named like 'coding-19W04-*your_nickname*' etc. **Make sure your repository name matches the mentioned pattern, it is absolutely required to match you to your repo and grade properly!**
 5. Use your personal repository from the previous step to push code of your solution for assignment.
 
 ### Implementing coding assignments
