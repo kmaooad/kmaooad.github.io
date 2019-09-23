@@ -42,7 +42,7 @@ Most assignments are about coding.
 
 ## Using F# 
 
-The quickest way to get into F# (having knowledge of programming in other languages) is to follow cool tutorial at [https://try.fsharp.org](https://try.fsharp.org). 
+The quickest way to get into F# (having knowledge of programming in other languages) is to follow cool tutorial at [try.fsharp.org](https://try.fsharp.org). 
 
 There is also a nice [F# Cheatsheet](https://dungpa.github.io/fsharp-cheatsheet/) with almost all available language features and syntax highlights. 
 
@@ -78,8 +78,8 @@ There is no such thing as "The Design Book", no book or even several books exist
 
 Gregor Hohpe, Bobby Woolf, "Enterprise Integration Patterns : Designing, Building, and Deploying Messaging Solutions" ([book website](https://www.enterpriseintegrationpatterns.com/) with additional info)
 
-[eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) - cool sample application from Microsoft showcasing typical usage of EF Core, ASP.NET Core, patterns etc]
+[eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) – cool sample application from Microsoft showcasing typical usage of EF Core, ASP.NET Core, patterns etc]
 
-[eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) - similar to above, but much more advanced version: with microservices, containers, message bus etc.
+[eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) – similar to above, but much more advanced version: with microservices, containers, message bus etc.
 
 
