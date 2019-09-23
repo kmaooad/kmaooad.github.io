@@ -5,13 +5,17 @@
 
 There is a chat in Gitter, click [![Join the chat at https://gitter.im/kmaooad18/course-home](https://badges.gitter.im/kmaooad18/course-home.svg)](https://gitter.im/kmaooad18/course-home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to join. There are several channels there. This repo channel (course-home) is for discussing lectures, theoretical issues, general ideas on topic (OOAD), and for _important_ organizational announcements. **Please, ask common questions in this public channel, not in personal chat, so that everyone could benefit from the discussion. For assignment-specific discussions, use their own channels (gitter button is in every assignment repo). Don't ask assignment questions in general channel.**
 
+## Issues and contribution
+
+If you find any issue or potential improvement (with texts, in starter code etc) and you think you can fix it – that is super-welcome! Just go ahead and with a pull request. Otherwise feel free to post an issue in the corresponding repository.
+
 ## Assignments
 
 Every week assignment deadline is 01:00 AM on next Wednesday.
 
 Assignments are assessed by successful run of _all_ tests from Spec.fs (you can check that locally in advance — see [below](#implementing-assignment)). Check your results on [builds summary](/builds.md) page. Green build badge means your solution passes all tests on build server. This always reflects the latest available build and you can use this page as a mark of state of your repository. To get max points for your solution you have to provide passing build *by deadline*. Only the latest commit _before_ the deadline is checked for passing build. Same applies to extended deadline to get half points. Bottom line is: it does not matter if you had passing build some time before deadline, but broke it right before the deadline! Only last commit always matters. That is how it works in real life, so try to be careful from the start. 
 
-[Week 4](https://classroom.github.com/a/pqvBgp3I) (Deadline 02/10)
+[Week 4](https://classroom.github.com/a/eQ5nklTc) (Deadline 02/10)
 
 ### Getting assignments
 
