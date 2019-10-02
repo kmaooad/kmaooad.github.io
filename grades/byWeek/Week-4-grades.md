@@ -1,5 +1,5 @@
-| #  |  Student   |  System.Linq.Enumerable+SelectListIterator`2[System.String,System.String]
-| --- |  ---   |  System.Linq.Enumerable+SelectListIterator`2[System.String,System.String]
+| #  |  Student   |  coding |
+| --- |  ---   |  --- |
 | 0 | nikndr |  ![](https://github.com/kmaooad/coding-19w4-nikndr/workflows/Grading/badge.svg) |
 | 1 | KmaCoder |  ![](https://github.com/kmaooad/coding-19w4-KmaCoder/workflows/Grading/badge.svg) |
 | 2 | ddenouement |  ![](https://github.com/kmaooad/coding-19w4-ddenouement/workflows/Grading/badge.svg) |

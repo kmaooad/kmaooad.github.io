@@ -1,3 +1,3 @@
-| Week | System.Linq.Enumerable+SelectListIterator`2[System.String,System.String]
-| --- | System.Linq.Enumerable+SelectListIterator`2[System.String,System.String]
+| Week | coding |
+| --- | --- |
 | 4 |  ![](https://github.com/kmaooad/coding-19w04-SofiYaremenko/workflows/Grading/badge.svg) |
