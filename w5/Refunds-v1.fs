@@ -46,13 +46,14 @@ module Accounting =
     let upload (customer:int) = 
         let billingPayments = DB.select<Billing.Payment> "payments"
         
-        let accountingPayments = billingPayments 
-                     			    |> List.filter (fun bp -> bp.amount < 0) // refund filter out 
-                                        |> List.map (fun bp -> {
-                                                                    Customer = bp.customer_id
-                                                                    TxnDate = bp.date.AddHours(6.0) // track all refunds after 6PM to next day
-                                                                    Amount = -(bp.amount)
-                                                                })
+        let accountingPayments = 
+               billingPayments 
+               |> List.filter (fun bp -> bp.amount < 0) // refund filter out 
+               |> List.map (fun bp -> {
+                                         Customer = bp.customer_id
+                                         TxnDate = bp.date.AddHours(6.0) // track all refunds after 6PM to next day
+                                         Amount = -(bp.amount)
+                                      })
         let request = Json.serialize accountingPayments
         
         Http.RequestString(Url, httpMethod = "POST", body = TextRequest request)
