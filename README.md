@@ -9,10 +9,11 @@ There is a chat in Gitter, click [![Gitter](https://badges.gitter.im/kmaooad/cou
 If you find any issue or potential improvement (with texts, in starter code etc) and you think you can fix it – that is super welcome! Just go ahead and with a [pull request](https://github.com/kmaooad/kmaooad.github.io/pulls). Otherwise feel free to post an [issue](https://github.com/kmaooad/kmaooad.github.io/issues) in the corresponding repository.
 
 ## Assignments
-
-| Week | Type / URL | Deadline |
-| ---- | ---- | ----- |
-| 4 | [Coding](https://classroom.github.com/a/eQ5nklTc) | Oct 2 (02/10) |
+ 
+| Week | Assignment | Deadline |   |
+| ---- | ---- | ----- | --- |
+| 4 | [Coding](https://classroom.github.com/a/eQ5nklTc) | Oct 2 (02/10) | [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-4-grades.md) |
+| 5 | [Coding](https://classroom.github.com/a/wZV1fVCs) | Oct 9 (09/10  |      N/A      |
 
 Every week assignment deadline is **01:00 AM** on next Wednesday.
 
@@ -55,6 +56,8 @@ Remember, we are not learning language itself here, but only use it as a conveni
 There is no such thing as "The Design Book", no book or even several books exist that could be a substitute for this course or exhaustive body of knowledge on the topic. Yet there are good books - some really considered *classics* today – and they can help to build *initial* body of knowledge. Some of the mentioned books are refered during the course.
 
 **Good general books about principles, patterns, and methods**
+
+[Mey] Bertrand Meyer, "Object-oriented software construction"
 
 [Lar] Craig Larman, "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition)"
 
