@@ -1,4 +1,4 @@
-module RefundsV2x2
+module RefundsV3
 
 open System
 open FSharp.Data
@@ -47,10 +47,16 @@ module Billing =
         |> iRefundsCreator
         |> iRefundsRepository
 
-    let download customer period iDownloader iResultProcessor =
+    type IPaymentDownloader =
+        abstract member Download : int -> Domain.BillingPeriod -> Payment list
+
+    type IResultProcessor =
+        abstract member Process : Payment list -> unit
+
+    let download customer period (d: IPaymentDownloader) (p: IResultProcessor) =
         (customer, period)
-        ||> iDownloader // (customer,period) -> Payment list
-        |> iResultProcessor // Payment list -> unit
+        ||> d.Download 
+        |> p.Process
 
 module Config =
     [<Literal>]
@@ -80,25 +86,27 @@ module Client =
 
     let responseHandlerImpl (response: string): Payment list = response |> Json.deserialize<Payment list>
 
-    let requestPaymentsImpl c p iRequestFactory iHttpClient iResponseHandler =
-        (c, p)
-        ||> iRequestFactory
-        ||> iHttpClient
-        |> iResponseHandler
-
     let customer = 404
 
     let period =
         { from = DateTime(2019, 10, 1)
           till = DateTime(2019, 10, 31) }
+    
+    // Interfaces mocks (replace with real interfaces and add their implementations)
+    type IRequestFactory = int -> BillingPeriod -> string * (string * string) list
+    type IHttpClient = string -> seq<string * string> -> string
+    type IResponseHandler = string -> Payment list
 
-    // Mixed DI and params
-    let downloaderImpl (customer: int) (p: BillingPeriod) =
-        (customer, period) // real parameters
-        ||> requestPaymentsImpl
-        <||| (requestFactoryImpl, httpClientImpl, responseHandlerImpl) // dependencies
+    type Downloader (rf: IRequestFactory, http: IHttpClient, rh: IResponseHandler) = 
+        interface Billing.IPaymentDownloader with
+         member this.Download c p =
+            (c, p) // real parameters
+            ||> rf
+            ||> http
+            |> rh
+        
 
-    // Split DI from passing params (objects imitation!)
+    // Code below will not work anymore - try to complete implementation yourself
 
     let _DI_resultProcessorImpl pp =
         pp // parameters "placeholders"
