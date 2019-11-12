@@ -15,7 +15,8 @@ If you find any issue or potential improvement (with texts, in starter code etc)
 | 4 | [Coding](https://classroom.github.com/a/eQ5nklTc) | Oct 2 (02/10) | [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-4-grades.md) |
 | 5 | [Coding](https://classroom.github.com/a/wZV1fVCs) | Oct 9 (09/10)  |      [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-5-grades.md)     |
 | 7 | [Coding](https://classroom.github.com/a/pcMyMZlB) | Thu, Oct 24 (24/10) *1 day added* |     TBD     |
-| 9 | [Coding](https://classroom.github.com/a/LK6vPUbs) | Thu, Nov 7 (07/11) | N/A |
+| 9 | [Coding](https://classroom.github.com/a/LK6vPUbs) | Thu, Nov 7 (07/11) | TBD |
+| 11 | [Coding](https://classroom.github.com/a/0FWOtdwf) | Wwd, Nov 20 (20/11) | N/A |
 
 Every week assignment deadline is **01:00 AM** on next Wednesday.
 
