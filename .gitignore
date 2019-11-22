@@ -1,1 +1,4 @@
+bin/
+obj/
 .ionide/symbolCache.db
+w12/obj/project.assets.json
