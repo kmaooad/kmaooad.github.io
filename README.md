@@ -1,5 +1,8 @@
 [View on GitHub](https://github.com/kmaooad/kmaooad.github.io/)
 
+## Assignments conclusions
+https://1drv.ms/u/s!AgO23vZnhfyZhPt2_yaIesEPIN1Pqg?e=AAvWtD
+
 ## Discussions and questions
 
 There is a chat in Gitter, click [![Gitter](https://badges.gitter.im/kmaooad/course-home.svg)](https://gitter.im/kmaooad/course-home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) to join. There are several channels there. This repo channel (course-home) is for discussing lectures, theoretical issues, general ideas on topic (software design & engineering), and for _important_ organizational announcements. **Please, ask common questions in this public channel, not in personal chat, so that everyone could benefit from the discussion. For assignment-specific discussions, use their own channels (gitter button is in every assignment repo). Don't ask assignment questions in general channel.**
