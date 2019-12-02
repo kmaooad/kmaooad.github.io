@@ -1,7 +1,7 @@
 [View on GitHub](https://github.com/kmaooad/kmaooad.github.io/)
 
 ## Assignments conclusions
-https://1drv.ms/u/s!AgO23vZnhfyZhPt2_yaIesEPIN1Pqg?e=AAvWtD
+https://1drv.ms/x/s!AgO23vZnhfyZhPt6MmSzXwaAKosGlg?e=FlWISL
 
 ## Discussions and questions
 
