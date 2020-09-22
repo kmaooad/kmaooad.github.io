@@ -1,25 +1,19 @@
 [View on GitHub](https://github.com/kmaooad/kmaooad.github.io/)
 
-## Assignments conclusions
-https://1drv.ms/x/s!AgO23vZnhfyZhPt8n8eaAoRGNjhSAw?e=Ubgfe7
-
 ## Discussions and questions
 
-There is a chat in Gitter, click [![Gitter](https://badges.gitter.im/kmaooad/course-home.svg)](https://gitter.im/kmaooad/course-home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) to join. There are several channels there. This repo channel (course-home) is for discussing lectures, theoretical issues, general ideas on topic (software design & engineering), and for _important_ organizational announcements. **Please, ask common questions in this public channel, not in personal chat, so that everyone could benefit from the discussion. For assignment-specific discussions, use their own channels (gitter button is in every assignment repo). Don't ask assignment questions in general channel.**
+Please feel free to address any questions or suggestions or initiate discussion on the subject in the course team in Microsoft Teams. 
 
 ## Issues and contribution
 
-If you find any issue or potential improvement (with texts, in starter code etc) and you think you can fix it – that is super welcome! Just go ahead and with a [pull request](https://github.com/kmaooad/kmaooad.github.io/pulls). Otherwise feel free to post an [issue](https://github.com/kmaooad/kmaooad.github.io/issues) in the corresponding repository.
+If you find any issue or potential improvement (with texts, in starter code etc) and you think you can fix it – welcome! Just go ahead with a [pull request](https://github.com/kmaooad/kmaooad.github.io/pulls). Otherwise feel free to post an [issue](https://github.com/kmaooad/kmaooad.github.io/issues) in the corresponding repository.
 
 ## Assignments
  
 | Week | Assignment | Deadline |   |
 | ---- | ---- | ----- | --- |
-| 4 | [Coding](https://classroom.github.com/a/eQ5nklTc) | Oct 2 (02/10) | [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-4-grades.md) |
-| 5 | [Coding](https://classroom.github.com/a/wZV1fVCs) | Oct 9 (09/10)  |      [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-5-grades.md)     |
-| 7 | [Coding](https://classroom.github.com/a/pcMyMZlB) | Thu, Oct 24 (24/10) *1 day added* |     [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-7-grades.md)     |
-| 9 | [Coding](https://classroom.github.com/a/LK6vPUbs) | Thu, Nov 7 (07/11) | [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-9-grades.md) |
-| 11 | [Coding](https://classroom.github.com/a/0FWOtdwf) | Wed, Nov 20 (20/11) | [Grades](https://github.com/kmaooad/kmaooad.github.io/blob/master/grades/byWeek/Week-11-grades.md) |
+| 4 | TBD | TBD | TBD |
+
 
 Every week assignment deadline is **01:00 AM** on next Wednesday.
 
@@ -30,15 +24,15 @@ Assignments are assessed by successful run of _all_ tests from Spec.fs (you can 
 1. Create your personal GitHub account (if you don't have one)
 2. Login to GitHub and follow one of the assigment links above
 3. On your first opening some assignment, GitHub will request access from Classroom to your account — that's ok, just grant access.
-4. As you accept the assignment, GitHub will create your **personal private repository** and put starter code for assignment there. Your repository will be named like 'coding-19W04-*your_nickname*' etc. **Make sure your repository name matches the mentioned pattern, it is absolutely required to match you to your repo and grade properly!**
+4. As you accept the assignment, GitHub will create your **personal private repository** and put starter code for assignment there. Your repository will be named like 'coding-20W04-*your_nickname*' etc. **Make sure your repository name matches the mentioned pattern, it is absolutely required to match you to your repo and grade properly!**
 5. Use your personal repository from the previous step to push code of your solution for assignment.
 
 ### Implementing coding assignments
 
 Most assignments are about coding.
 
-1. Assigments are implemented in F# language and .NET Core 2.1 or later. 
-2. To be able to develop, build, and run assignments you will need to install [.NET Core 2.1 SDK](https://www.microsoft.com/net/download/dotnet-core/2.1). MacOS also requires Mono to use F# - see [https://fsharp.org/use/mac/](https://fsharp.org/use/mac/).
+1. Assigments are implemented in F# language and the latest .NET 5. 
+2. To be able to develop, build, and run assignments you will need to install [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0).
 3. You are free to use any editor you like or even go pure command-line, but the recommended IDE is [Visual Studio Code](https://code.visualstudio.com/download) (it's also cross-platform, it's nice, lightweight, simple, yet powerful). There is also a [portable version](https://code.visualstudio.com/docs/editor/portable) that does not need installation. For convenient use of F# in Visual Studio Code it's highly recommended to install [Ionide extension](http://ionide.io/).
 4. To build the assignment, clone your repository from GitHub, in VS Code terminal or plain command line go to project folder (you need one with .fsproj file in it), and execute `dotnet build`, or you may use `dotnet run` to build and run at once.
 5. Assignment comes as a starter code, typically as client code in Client.fs and Spec.fs file with specification tests.
@@ -63,19 +57,17 @@ There is no such thing as "The Design Book", no book or even several books exist
 
 **Good general books about principles, patterns, and methods**
 
-[Mey] Bertrand Meyer, "Object-oriented software construction"
-
-[Lar] Craig Larman, "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition)"
-
-[Mar] Robert C. Martin, "Agile Principles, Patterns, and Practices in C#"
+[Ddd] Eric Evans, "Domain-Driven Design: Tackling Complexity in the Heart of Software"
 
 [GoF] Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm, "Design Patterns: Elements of Reusable Object-Oriented Software"
 
 [Fow] Martin Fowler, "Patterns of Enterprise Applications Architecture" ([book website](https://www.martinfowler.com/books/eaa.html), [patterns catalog](https://martinfowler.com/eaaCatalog/))
 
-[Ddd] Eric Evans, "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-
 [See] Mark Seemann, "Dependency Injection in .NET, Second Edition"
+
+[Lar] Craig Larman, "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition)"
+
+[Mar] Robert C. Martin, "Agile Principles, Patterns, and Practices in C#"
 
 [Ver] Vaugn Vernon, "Implementing Domain-Driven Design"
 

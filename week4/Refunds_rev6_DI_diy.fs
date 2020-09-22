@@ -1,4 +1,4 @@
-module RefundsV3
+module Refunds6
 
 open System
 open FSharp.Data
@@ -113,9 +113,10 @@ module Client =
         |> resultProcessorImpl
         <|| (refundsCreatorImpl, refundRepositoryImpl) // inject dependencies
 
-    let _DI_download c p =
-        (c, p) // parameters "placeholders"
-        ||> download
-        <|| (downloaderImpl, _DI_resultProcessorImpl) // inject dependencies
+    // TODO: uncomment and make it compile
+    // let _DI_download c p =
+    //     (c, p) // parameters "placeholders"
+    //     ||> download
+    //     <|| (downloaderImpl, _DI_resultProcessorImpl) // inject dependencies
 
-    (customer, period) ||> _DI_download
+    // (customer, period) ||> _DI_download

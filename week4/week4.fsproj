@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Refunds_rev1.fs" />
+    <Compile Include="Refunds_rev2.fs" />
+    <Compile Include="Refunds_rev3_DI_simplest.fs" />
+    <Compile Include="Refunds_rev3_DI_simplest2.fs" />
+    <Compile Include="Refunds_rev4_DI_object.fs" />
+    <Compile Include="Refunds_rev5_DI_full.fs" />
+    <Compile Include="Refunds_rev6_DI_diy.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.3.3" />
+    <PackageReference Include="FSharp.Json" Version="0.4.0" />
+  </ItemGroup>
+
+</Project>
