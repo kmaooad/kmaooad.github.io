@@ -58,8 +58,6 @@ module Client =
 
     type HttpPaymentClient(httpClient: IHttpClient) =
 
-        let client = httpClient
-
         member this.Request (customer: int) (p: BillingPeriod) =
             let request =
                 [ ("customer", customer |> string)
