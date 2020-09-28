@@ -93,8 +93,8 @@ module Client =
           till = DateTime(2019, 10, 31) }
 
     // Mixed DI and params
-    let downloaderImpl (customer: int) (p: BillingPeriod) =
-        (customer, period)
+    let downloaderImpl (c: int) (p: BillingPeriod) =
+        (c, p)
         ||> requestPaymentsImpl
         <||| (requestFactoryImpl, httpClientImpl, responseHandlerImpl)
 
