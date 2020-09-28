@@ -69,18 +69,13 @@ module Client =
     open Billing
     open Domain
 
-
-    let adjustTz (d: DateTime) = d.AddHours(-5.0)
-    let format (d: DateTime) = sprintf "%O" d
-    let prepare = adjustTz >> format
-
     let httpClientImpl url formData = Http.RequestString(url, httpMethod = "POST", body = FormValues formData)
 
     let requestFactoryImpl (customer: int) (p: BillingPeriod) =
         let body =
-            [ ("customer_id", customer |> string)
-              ("from", p.from |> prepare)
-              ("to", p.till |> prepare) ]
+            [ ("customer", customer |> string)
+              ("from", p.from |> string)
+              ("till", p.till |> string) ]
         (Config.BillingUrl, body)
 
     let responseHandlerImpl (response: string): Payment list = response |> Json.deserialize<Payment list>
