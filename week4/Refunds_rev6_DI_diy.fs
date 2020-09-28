@@ -40,7 +40,6 @@ module Billing =
             }
         rr |> List.ofSeq
 
-    let refundRepositoryImpl refunds = refunds |> List.iter (DB.insert "refunds")
 
     let resultProcessorImpl payments iRefundsCreator iRefundsRepository =
         payments
@@ -85,6 +84,8 @@ module Client =
         (Config.BillingUrl, body)
 
     let responseHandlerImpl (response: string): Payment list = response |> Json.deserialize<Payment list>
+
+    let refundRepositoryImpl refunds = refunds |> List.iter (DB.insert "refunds")
 
     let customer = 404
 

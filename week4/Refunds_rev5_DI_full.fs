@@ -42,9 +42,6 @@ module Billing =
         |> List.ofSeq
 
 
-    let refundRepositoryImpl refunds =
-        refunds |> List.iter (DB.insert "refunds")
-
     let resultProcessorImpl payments iRefundsCreator iRefundsRepository =
         payments |> iRefundsCreator |> iRefundsRepository
 
@@ -86,6 +83,9 @@ module Client =
         ||> iHttpClient
         |> iResponseHandler
 
+    let refundRepositoryImpl refunds =
+            refunds |> List.iter (DB.insert "refunds")
+    
     let customer = 404
 
     let period =
