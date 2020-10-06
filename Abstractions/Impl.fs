@@ -16,6 +16,10 @@ module DB =
 
 let httpClientImpl url formData =
     Http.RequestString(url, httpMethod = "POST", body = FormValues formData)
+ 
+let retyingHttpClientImpl url formData httpClient = 
+    try httpClient url formData with
+    | _ -> "add retry logic here"
 
 let requestFactoryImpl (customer: int) (p: BillingPeriod) =
     let body =
