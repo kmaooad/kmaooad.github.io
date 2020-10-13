@@ -40,3 +40,5 @@ let requestPaymentsImpl c p iRequestFactory iHttpClient iResponseHandler =
 
 let refundRepositoryImpl refunds =
     refunds |> List.iter (DB.insert "refunds")
+
+let taxIdLookup customerId = "123456789"
