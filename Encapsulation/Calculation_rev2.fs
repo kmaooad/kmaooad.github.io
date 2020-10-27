@@ -4,56 +4,63 @@ open System
 
 module Domain =
 
-    type Product =
-        { Id: int
-          Type: string
-          Price: decimal }
-
-    type Customer = { Id: int; Zip: string }
-    type ProductQty = { Product: Product; Qty: int }
-
     type OrderItem =
-        { Product: Product
-          Qty: int
-          TaxRate: decimal }
+        { Product: int
+          Price: decimal
+          Qty: int }
+
+    type TaxRate = { Product: int; Rate: decimal }
 
     type Order =
         { Total: decimal
-          Customer: Customer
+          Customer: int
           Items: OrderItem list }
 
+    let calculate customer (items: OrderItem list) (rates: TaxRate list) =
+        let productRate p =
+            let rate =
+                rates |> List.find (fun r -> r.Product = p)
 
+            rate.Rate
 
-    let calculate (cus: Customer) (products: ProductQty list) taxRateLookup =
-
-        let items =
-            products
-            |> List.map (fun pq ->
-                { Product = pq.Product
-                  Qty = pq.Qty
-                  TaxRate = taxRateLookup (pq.Product.Type) (cus.Zip) })
-
-        let total =
+        let total () =
             items
             |> List.sumBy (fun i ->
-                let amount = i.Product.Price * (i.Qty |> decimal)
-                let tax = amount * i.TaxRate
+                let amount = i.Price * (i.Qty |> decimal)
+                let tax = amount * (productRate i.Product)
                 amount + tax)
 
-        { Total = total
-          Customer = cus
+        { Total = total ()
+          Customer = customer
           Items = items }
 
 module Impl =
     let customerZip customerId = "02903"
     let productType productId = "Clothing"
     let productPrice productId = 99m
-    let taxRateLookup productType zipCode = 0.075m
+    let taxRate productType zipCode = 0.075m
 
 module Client =
     open Impl
     open Domain
 
-    let makeOrder customer (items: ProductQty list) =
-       
-        calculate customer items taxRateLookup
+    type OrderItem = { Product: int; Qty: int }
+
+    let makeOrder customer (items: OrderItem list) =
+        let rates =
+            items
+            |> List.map (fun i ->
+                let ptype = productType i.Product
+                let zip = customerZip customer
+                { Product = i.Product
+                  Rate = taxRate i.Product zip })
+
+        let items2 =
+            items
+            |> List.map (fun i ->
+                let price = productPrice i.Product
+                { Product = i.Product
+                  Qty = i.Qty
+                  Price = price })
+
+        calculate customer items2 rates
